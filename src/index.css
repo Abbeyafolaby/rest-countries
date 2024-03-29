@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: hsl(207, 26%, 17%);
+    font-family: "Nunito Sans", "sans-serif";
+}
+
+.search-container {
+    position: relative; /* Enable relative positioning for icon placement */
+    display: flex; /* Arrange icon and input side-by-side */
+    align-items: center; /* Vertically align icon and input */
+  }
+  
+  .search-icon {
+    position: absolute; /* Position icon absolutely within the container */
+    left: 10px; /* Adjust horizontal position of the icon (optional) */
+    top: 50%; /* Vertically center the icon (optional) */
+    transform: translateY(-50%); /* Offset vertical position for centering */
+  }
+  
