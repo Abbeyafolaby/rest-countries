@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CountryProps } from "../index";
 
 const Country: React.FC<CountryProps> = ({
@@ -9,6 +10,7 @@ const Country: React.FC<CountryProps> = ({
   alt
 }) => {
   return (
+    <Link to={`/${name}`}>
     <div key={name} className='rounded-md space-y-4 bg-dark-blue shadow-md mb-8'>
       <div>
         <img src={flag} alt={alt} className='w-full h-40 rounded-t-md ' />
@@ -22,6 +24,7 @@ const Country: React.FC<CountryProps> = ({
         <p className='text-sm mb-1'>Capital: {capital}</p>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -7,6 +7,7 @@ export interface Country {
     region:     Region;
     subregion:  string;
     languages:  { [key: string]: string };
+    borders:    string[];
     population: number;
 }
 
@@ -48,4 +49,9 @@ export interface CountryProps {
     region: string;
     capital: string[];
     alt: string
+}
+
+export interface SearchProps {
+    onSearch: (searchTerm: string) => void; // Function to handle search
+    onRegionFilter: (region: string) => void; // Function to handle region filter
   }
