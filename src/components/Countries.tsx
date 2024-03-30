@@ -1,15 +1,6 @@
 import useSWR from 'swr'
-
-interface Country {
-    id: number;
-    name: Name;
-}
-
-interface Name {
-    common:     string;
-    official:   string;
-}
-
+import { Country } from '../index'
+import CountryData from './Country'
 
 const fetcher: (url: string) => Promise<Country[]> = async (url) => {
     const response = await fetch(url);
@@ -17,11 +8,9 @@ const fetcher: (url: string) => Promise<Country[]> = async (url) => {
     return data;
 };
 
-
-
 const Countries = () => {
 
-    const { data, error, isLoading } = useSWR<Country[], Error>('https://restcountries.com/v3.1/all?fields=name', fetcher);
+    const { data, error, isLoading } = useSWR<Country[], Error>('https://restcountries.com/v3.1/all?fields=name,population,region,capital,flags,tld,languages,subregion,currencies', fetcher);
 
         console.log(data);
     if (isLoading) return <div>Loading...</div>;
@@ -30,11 +19,17 @@ const Countries = () => {
 
 
   return (
-    <div>
+    <div className='pt-8 mx-10 text-white md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 lg:gap-12 xl:gap-16'>
         {data?.map((country) => (
-        <div key={country.id}>
-        <div >{country.name.common}</div>
-        </div>
+            <CountryData 
+                key={country.name.common}
+                name={country.name.common}
+                flag={country.flags.png}
+                population={country.population}
+                region={country.region}
+                capital={country.capital}
+                alt={country.flags.alt}
+            />
         ))}
     </div>
   )
