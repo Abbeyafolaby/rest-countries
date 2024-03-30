@@ -14,11 +14,11 @@ const Search = () => {
       <div className="mt-6 md:mt-0">
         <select className="bg-dark-blue outline-none p-3 rounded-sm shadow-lg cursor-pointer">
             <option value="">Filter by region</option>
-            <option value="africa">Africa</option>
-            <option value="america">America</option>
-            <option value="asia">Asia</option>
-            <option value="europe">Europe</option>
-            <option value="north-america">Oceania</option>
+            <option value="">Africa</option>
+            <option value="">America</option>
+            <option value="">Asia</option>
+            <option value="">Europe</option>
+            <option value="">Oceania</option>
         </select>
       </div>
     </section>
