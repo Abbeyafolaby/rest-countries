@@ -31,11 +31,12 @@ const Search: React.FC<SearchProps> = ({ onSearch, onRegionFilter }) => {
       </div>
       <div className="mt-6 md:mt-0">
         <select
-          className="bg-dark-blue outline-none p-3 rounded-sm shadow-lg cursor-pointer"
+          className="bg-dark-blue outline-none p-3 rounded-sm shadow-lg cursor-pointer text-sm"
           value={selectedRegion}
           onChange={handleRegionChange}
         >
           <option value="">Filter by region</option>
+          <option value="">All</option>
           <option value="Africa">Africa</option>
           <option value="Americas">America</option>
           <option value="Asia">Asia</option>

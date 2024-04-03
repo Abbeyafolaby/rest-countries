@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import Countries from "./components/Countries"
 import MainLayout from './layouts/MainLayout'
-import CountryDetails, { CountryLoader } from './pages/CountryDetails'
+import CountryDetails from './pages/CountryDetails'
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<MainLayout />}>
         <Route index element={<Countries />}/>
-        <Route path=':name' element={<CountryDetails />} loader={CountryLoader} />
+        <Route path=':name' element={<CountryDetails />} />
       </Route>
     )
   )
