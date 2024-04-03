@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom"; 
 import { IoArrowBack } from "react-icons/io5";
+import { CountryData} from "../index";
+
+
 
 
 const CountryDetails = () => {
   const { name } = useParams(); // Extract country name from route parameters
 
   // Handle potential errors (assuming you have a state management library like Redux or Context)
-  const [countryData, setCountryData] = useState(null); // Optional: State to store data
+  const [countryData, setCountryData] = useState<CountryData | null>(null); // Optional: State to store data
   const [isLoading, setIsLoading] = useState(true); // Optional: State for loading indicator
   const [error, setError] = useState(null); // Optional: State for error messages
 
@@ -51,7 +54,7 @@ const CountryDetails = () => {
     tld
 } = countryData;
 
-// console.log(countryData.name);
+console.log(countryData.name);
 
 const languageNames = Object.values(countryLanguages);
 const joinedLanguageNames = languageNames.join(", ");
