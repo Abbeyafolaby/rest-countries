@@ -12,7 +12,7 @@ const Loading = () => {
             onRegionFilter={handleRegionFilter}
         />
         <section className="pt-8 mx-10 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 lg:gap-12 xl:gap-16">
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -24,7 +24,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -36,7 +36,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -48,7 +48,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -60,7 +60,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -72,7 +72,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -84,7 +84,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
@@ -96,7 +96,7 @@ const Loading = () => {
                     </div>
                 </div>
             </div>
-            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md mb-8 w-[270px] h-[320px]'>
+            <div className='animate-pulse rounded-md space-y-4 bg-dark-blue shadow-md w-[270px] h-[320px]'>
                 <div className="w-full h-1/2 bg-slate-700 rounded-t-md">
                 </div>
                 <div className='px-6 pb-4'>
