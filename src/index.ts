@@ -11,26 +11,6 @@ export interface Country {
     population: number;
 }
 
-export interface CountryData {
-    name: {
-      common: string;
-      official: string;
-      nativeName: {
-        [key: string]: { official: string; common: string };
-      };
-    };
-    flags: Flags, 
-    population: number, 
-    region: Region, 
-    capital: string[], 
-    languages: { [key: string]: string }, 
-    currencies: { [key: string]: Currency },
-    subregion: string,
-    borders: string[],
-    tld: string[],
-  }
-  
-
 export interface Currency {
     name:   string;
     symbol: string;
@@ -74,4 +54,4 @@ export interface CountryProps {
 export interface SearchProps {
     onSearch: (searchTerm: string) => void; // Function to handle search
     onRegionFilter: (region: string) => void; // Function to handle region filter
-  }
+}

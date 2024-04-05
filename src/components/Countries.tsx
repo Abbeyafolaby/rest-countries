@@ -3,6 +3,7 @@ import { Country } from '../index'
 import CountryData from './Country'
 import { useState } from 'react';
 import Search from './Search';
+import Loading from './Loading';
 
 const fetcher: (url: string) => Promise<Country[]> = async (url) => {
     const response = await fetch(url);
@@ -32,7 +33,7 @@ const Countries = () => {
     
 
         console.log(data);
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <Loading />;
     if (error) return <div>Error: {error.message}</div>;
     
 
